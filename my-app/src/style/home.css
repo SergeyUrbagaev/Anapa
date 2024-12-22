@@ -1,0 +1,51 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.wraper {
+	width: 100%;
+	height: 100vh;
+	background-image: url("../img/Zal.jpeg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 0 7%;
+	margin-bottom: 10px;
+}
+.oneText {
+	color: #ffc091;
+	font-weight: bold;
+	margin-left: 5cqh;
+	font-size: 4rem;
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+.twoText {
+	color: #f6a05f;
+	margin-left: 5%;
+	font-size: 2rem;
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+	margin-top: 10px;
+}
+@media screen and (max-width: 768px) {
+	.wraper {
+		height: 60vh; /* Высота блока для мобильных устройств */
+		background-size: cover; /* Изображение адаптируется */
+		background-position: center; /* Центрирование */
+		padding: 20px; /* Более узкие отступы */
+	}
+	.oneText {
+		font-size: 1.3rem;
+		margin-left: 1%;
+	}
+	.twoText {
+		font-size: 0.9rem;
+		margin-top: 5px;
+		margin-left: 1%;
+	}
+}
