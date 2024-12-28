@@ -1,10 +1,12 @@
 .wraper-sales {
 	width: 100%;
+	height: auto;
 }
 .last-news {
 	margin: 0 auto;
 	text-align: center;
 	margin-top: 20px;
+	margin-bottom: 20px;
 
 }
 .block-news {
@@ -12,16 +14,22 @@
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-around;
-
+	flex-wrap: nowrap;
 }
 .conteiner {
 	width: 20vw;
-	border: 2px solid #333;
+	border: 1px solid #333;
 	height: 50vh;
 	display: flex;
 	flex-direction: column;
 }
 .conteiner-img {
+	height: 50%;
+	width: 100%;
+	
+		background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
 }
 .text-news {
 	
