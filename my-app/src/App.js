@@ -3,13 +3,14 @@ import "./index.css";
 import Home from "./componets/Home";
 import Sales from "./componets/Sales";
 import Gallery from "./componets/Gallery";
+import SeaJpeg from "./img/Sea.jpg"
 
 export default function App() {
 	const arrGalerey = [
-		'../img/sea.jpg',
-		'../img/sales2.jpeg',
-		'../img/sales3.jpg',
-		'../img/sales4.jpeg',
+		require('./img/sales1.jpeg'),
+		require('./img/sales2.jpeg'),
+		require('./img/sales3.jpg'),
+		require('./img/sales4.jpeg'),
 	]
 	return (
 		<div>
@@ -17,7 +18,7 @@ export default function App() {
 			<Home />
 			<Sales />
 			<Gallery photos={arrGalerey} />
-
+			<img src={SeaJpeg} alt="2" />
 		</div>
 	);
 }
