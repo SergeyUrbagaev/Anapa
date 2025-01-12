@@ -6,12 +6,17 @@ import "../style/gallery.css";
 
 const Gallery = ({ photos }) => {
 	const [currentIndex, setCurrentIndex] = useState(0);
+	const [isFullScreen, setIsFullScreen] = useState(false);
 	const goToNext = () => {
 		setCurrentIndex((prevIndex) => (prevIndex + 1) % photos.length)
 	}
 	const goToPrev = () => {
 		setCurrentIndex((prevIndex) => (prevIndex - 1 + photos.length) % photos.length);
 	};
+	const toggleFullScreen = (e) => {
+		e.stopPropagation();
+		setIsFullScreen(!isFullScreen);
+	}
 	return (
 		<div className='gallery'>
 			<button
@@ -23,13 +28,30 @@ const Gallery = ({ photos }) => {
 					src={photos[currentIndex]}
 					className='photo'
 					alt={`Photo ${currentIndex}`}
+					onClick={toggleFullScreen}
 				/>
 			</div>
 			<button
 				onClick={goToNext}
 				className='but-prev'
 			>{"Следующая"}</button>
-
+			{isFullScreen && (
+				<div className="fullscreen-overlay" onClick={toggleFullScreen}>
+					<div className="fullscreen-container">
+						<img
+							src={photos[currentIndex]}
+							alt={`Photo ${currentIndex}`}
+							className="fullscreen-image"
+						/>
+						<button
+							className="close-button"
+							onClick={toggleFullScreen}
+						>
+							✕
+						</button>
+					</div>
+				</div>
+			)}
 
 		</div>)
 };
