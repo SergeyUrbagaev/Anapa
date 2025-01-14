@@ -11,26 +11,26 @@ export default function Sales() {
 			<div className="block-news">
 				<div className="conteiner">
 					<div className="conteiner-img" style={{ backgroundImage: backgroundImage1 }}></div>
-					<h3 className="main-news">Скидки на</h3>
-					<p className="text-news">Планируйте свой отдых заранее и получите скидку 20%!</p>
+					<h3 className="main-news">Скидки</h3>
+					<p className="text-news">Планируйте свой отдых заранее и получите скидку 10%!</p>
 					<button className="butt-learn">Узнать</button>
 				</div>
 				<div className="conteiner">
 					<div className="conteiner-img" style={{ backgroundImage: backgroundImage2 }} alt={"2"}> </div>
-					<h3 className="main-news">Летние предложения для вас!</h3>
-					<p className="text-news">Не упустите шанс отдохнуть на море по суперценам!</p>
-					<button className="butt-learn">Узнать</button>
+					<h3 className="main-news">Новости Анапы</h3>
+					<p className="text-news">Что случилось в самом прекрасном Черноморском курорте</p>
+					<a href="https://93.ru/text/tags/anapa/"><button className="butt-learn">Узнать</button></a>
 				</div>
 				<div className="conteiner">
 					<div className="conteiner-img" style={{ backgroundImage: backgroundImage3 }}></div>
-					<h3 className="main-news">Специальные предложения для семей!</h3>
-					<p className="text-news">Семейные пакеты с дополнительными бонусами для детей!</p>
-					<button className="butt-learn">Узнать</button>
+					<h3 className="main-news">Перспективы развития города-курорта Анапа</h3>
+					<p className="text-news">Грандиозные планы на песчанную Анапу.</p>
+					<a href="/prospects.html"><button className="butt-learn">Узнать</button></a>
 				</div>
 				<div className="conteiner">
 					<div className="conteiner-img" style={{ backgroundImage: backgroundImage4 }}></div>
-					<h3 className="main-news">Новые удобства в квартире!</h3>
-					<p className="text-news">Теперь у нас есть бассейн и зона для барбекю!</p>
+					<h3 className="main-news">Что находится рядом с квартирой</h3>
+					<p className="text-news">Полезные локации вблизи апартаментов</p>
 					<button className="butt-learn">Узнать</button>
 				</div>
 			</div>

@@ -30,7 +30,7 @@ const Gallery = ({ photos }) => {
 					<img
 						src={photos[currentIndex]}
 						className='photo'
-						alt={`Photo ${currentIndex}`}
+						alt={`home ${currentIndex}`}
 						onClick={toggleFullScreen}
 					/>
 				</div>
@@ -43,7 +43,7 @@ const Gallery = ({ photos }) => {
 						<div className="fullscreen-container">
 							<img
 								src={photos[currentIndex]}
-								alt={`Photo ${currentIndex}`}
+								alt={`home ${currentIndex}`}
 								className="fullscreen-image"
 							/>
 							<button
