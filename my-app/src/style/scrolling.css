@@ -1,0 +1,27 @@
+ 
+.wrap-scrolling{
+background-color: #f0f0f0;
+}
+.scrolling{
+    white-space: nowrap;
+    overflow: hidden;
+    display: block;
+    width: auto;
+    font-size: 3.5em;
+    /*Увеличенныйразмершрифта*/color: #333;
+    /*Цветтекста*/
+    /*Фоновыйцвет*/padding: 10px 0;
+    /*Отступысверхуиснизу*/animation: scrolling 10s linear infinite;
+        /* Уменьшенная скорость анимации */;
+    -webkit-animation: scrolling 10s linear infinite;
+}
+
+@keyframes scrolling {
+    from {
+        transform: translateX(100%);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}

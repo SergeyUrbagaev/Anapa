@@ -36,6 +36,11 @@
 	font-weight: 500;
 	font-family: "Monotype Corsiva", cursive;
 	margin-left: 10px;
+
+}
+.anapa a{
+	text-decoration: none;
+	color: #232323;
 }
 .nav-links {
 	list-style: none;
@@ -71,6 +76,10 @@
 	cursor: pointer;
 	padding: 10px 20px;
 	transition: background-color 0.3s ease;
+}
+.booking a{
+	text-decoration: none;
+	color: #ffc600;
 }
 .booking:hover {
 	background-color: #ffc600;
@@ -146,6 +155,10 @@
 	}
 	.booking {
 		margin-left: 40%;
+		color: #d8d8d8;
+	}
+	.booking a {
+		color: #d8d8d8;
 	}
 	.logo img {
 		width: 40px;

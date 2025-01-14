@@ -3,6 +3,7 @@ import "./index.css";
 import Home from "./componets/Home";
 import Sales from "./componets/Sales";
 import Gallery from "./componets/Gallery";
+import Scrolling from "./componets/Scrolling";
 
 export default function App() {
 	const arrGalerey = [
@@ -21,16 +22,14 @@ export default function App() {
 		require('./img/img-galerey/13.jpg'),
 		require('./img/img-galerey/14.jpg'),
 		require('./img/img-galerey/15.jpg'),
-		require('./img/img-galerey/16.jpg'),
-
 	]
-
 	return (
 		<div>
 			<Navbar />
 			<Home />
 			<Sales />
 			<Gallery photos={arrGalerey} />
+			<Scrolling />
 		</div>
 	);
 }
