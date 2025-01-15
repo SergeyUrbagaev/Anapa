@@ -170,3 +170,12 @@
 		font-size: 1.2rem;
 	}
 }
+
+/* Изменнение нав бара при прокрутке страницы */
+.transparent-on-scroll {
+	transition: opacity 0.3s ease;
+}
+
+.transparent-on-scroll.transparent {
+	opacity: 0.7; /* Пример значения прозрачности */
+}

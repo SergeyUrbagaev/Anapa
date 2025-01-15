@@ -5,11 +5,15 @@ import SeaJpeg from "../img/Sea.jpg"
 
 export default function Navbar() {
 	const [isMenyOpen, setMenyOpen] = useState(false);
+
 	const toogleMenu = () => {
 		setMenyOpen(!isMenyOpen)
 	}
+
+
 	return (
 		<div className="navbar">
+
 			<div className='logo'>
 				<img src={SeaJpeg} alt='123' />
 				<div className='anapa'><a href='https://habr.com/ru'>Анапа</a></div>
