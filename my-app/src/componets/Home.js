@@ -3,7 +3,8 @@ import "../style/home.css"
 
 export default function Home() {
 	const [time, setTime] = useState(false)
-	const data = new Date()
+	const newData = new Date()
+	const data = newData.toLocaleTimeString()
 	return (
 		<div className="wraper">
 			<h1 className="oneText">Сдача квартиры</h1>
