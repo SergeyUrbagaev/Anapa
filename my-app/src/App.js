@@ -4,6 +4,7 @@ import Home from "./componets/Home";
 import Sales from "./componets/Sales";
 import Gallery from "./componets/Gallery";
 import Scrolling from "./componets/Scrolling";
+import Advantages from "./componets/Advantages";
 
 export default function App() {
 	const arrGalerey = [
@@ -30,6 +31,7 @@ export default function App() {
 			<Sales />
 			<Gallery photos={arrGalerey} />
 			<Scrolling />
+			<Advantages />
 		</div>
 	);
 }
